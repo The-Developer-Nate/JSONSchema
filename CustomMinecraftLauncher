@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "email": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "memory": {
+      "type": "integer"
+    },
+    "offlineuser": {
+      "type": "string"
+    },
+    "mpn": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "email",
+    "password",
+    "version",
+    "memory",
+    "offlineuser",
+    "mpn"
+  ]
+}
