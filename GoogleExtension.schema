@@ -1,0 +1,277 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "manifest_version": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "action": {
+      "type": "object",
+      "additionalProperties": false
+    },
+    "default_locale": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "icons": {
+      "type": "object",
+      "additionalProperties": false
+    },
+    "author": {
+      "type": "string"
+    },
+    "automation": {
+      "type": "string"
+    },
+    "background": {
+      "type": "object",
+      "properties": {
+        "service_worker": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "chrome_settings_overrides": {
+      "type": "object",
+      "additionalProperties": false
+    },
+    "chrome_url_overrides": {
+      "type": "object",
+      "additionalProperties": false
+    },
+    "commands": {
+      "type": "object",
+      "additionalProperties": false
+    },
+    "content_capabilities": {
+      "type": "string"
+    },
+    "content_scripts": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "additionalProperties": false
+        }
+      ]
+    },
+    "content_security_policy": {
+      "type": "object",
+      "additionalProperties": false
+    },
+    "converted_from_user_script": {
+      "type": "string"
+    },
+    "cross_origin_embedder_policy": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "cross_origin_opener_policy": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "current_locale": {
+      "type": "string"
+    },
+    "declarative_net_request": {
+      "type": "string"
+    },
+    "devtools_page": {
+      "type": "string"
+    },
+    "differential_fingerprint": {
+      "type": "string"
+    },
+    "event_rules": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "additionalProperties": false
+        }
+      ]
+    },
+    "externally_connectable": {
+      "type": "object",
+      "properties": {
+        "matches": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "file_browser_handlers": {
+      "type": "array",
+      "items": {}
+    },
+    "file_system_provider_capabilities": {
+      "type": "object",
+      "properties": {
+        "configurable": {
+          "type": "boolean"
+        },
+        "multiple_mounts": {
+          "type": "boolean"
+        },
+        "source": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "homepage_url": {
+      "type": "string"
+    },
+    "host_permissions": {
+      "type": "array",
+      "items": {}
+    },
+    "import": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "incognito": {
+      "type": "string"
+    },
+    "input_components": {
+      "type": "string"
+    },
+    "key": {
+      "type": "string"
+    },
+    "minimum_chrome_version": {
+      "type": "string"
+    },
+    "nacl_modules": {
+      "type": "array",
+      "items": {}
+    },
+    "natively_connectable": {
+      "type": "string"
+    },
+    "oauth2": {
+      "type": "string"
+    },
+    "offline_enabled": {
+      "type": "boolean"
+    },
+    "omnibox": {
+      "type": "object",
+      "properties": {
+        "keyword": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "optional_permissions": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "options_page": {
+      "type": "string"
+    },
+    "options_ui": {
+      "type": "object",
+      "properties": {
+        "chrome_style": {
+          "type": "boolean"
+        },
+        "page": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "permissions": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "platforms": {
+      "type": "string"
+    },
+    "replacement_web_app": {
+      "type": "string"
+    },
+    "requirements": {
+      "type": "object",
+      "additionalProperties": false
+    },
+    "sandbox": {
+      "type": "array",
+      "items": {}
+    },
+    "short_name": {
+      "type": "string"
+    },
+    "storage": {
+      "type": "object",
+      "properties": {
+        "managed_schema": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "system_indicator": {
+      "type": "string"
+    },
+    "tts_engine": {
+      "type": "object",
+      "additionalProperties": false
+    },
+    "update_url": {
+      "type": "string"
+    },
+    "version_name": {
+      "type": "string"
+    },
+    "web_accessible_resources": {
+      "type": "array",
+      "items": {}
+    }
+  },
+  "additionalProperties": false
+}
